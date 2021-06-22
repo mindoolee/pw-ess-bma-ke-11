@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4315857-3BD1-4EA5-94AF-A64D0BF1390A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_PeopleWorks__UPB4860_Gen3_MC03_V4</RootNamespace>
+    <AssemblyName>[PeopleWorks] UPB4860 Gen3 MC03 V5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>laptop_battery.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.2, Version=14.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.18.6.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPass.Designer.cs">
+      <DependentUpon>AdminPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ArmXY.cs" />
+    <Compile Include="ArmXYZ.cs" />
+    <Compile Include="AXL\AXA.cs" />
+    <Compile Include="AXL\AXC.cs" />
+    <Compile Include="AXL\AXD.cs" />
+    <Compile Include="AXL\AXDev.cs" />
+    <Compile Include="AXL\AXHD.cs" />
+    <Compile Include="AXL\AXHS.cs" />
+    <Compile Include="AXL\AXL.cs" />
+    <Compile Include="AXL\AXM.cs" />
+    <Compile Include="BarcodePrint.cs" />
+    <Compile Include="BarcodeReader.cs" />
+    <Compile Include="BatteryTester2.cs" />
+    <Compile Include="BatteryTester3.cs" />
+    <Compile Include="BCDManualPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BCDManualPrint.Designer.cs">
+      <DependentUpon>BCDManualPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chroma_19032.cs" />
+    <Compile Include="ConfigSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigSetup.Designer.cs">
+      <DependentUpon>ConfigSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HipotDSSWAlarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HipotDSSWAlarm.Designer.cs">
+      <DependentUpon>HipotDSSWAlarm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoneyWell.cs" />
+    <Compile Include="IL1000.cs" />
+    <Compile Include="IO_Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IO_Monitor.Designer.cs">
+      <DependentUpon>IO_Monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LaserMarking.cs" />
+    <Compile Include="LotCountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LotCountForm.Designer.cs">
+      <DependentUpon>LotCountForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mirae_Timer.cs" />
+    <Compile Include="ModelList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelList.Designer.cs">
+      <DependentUpon>ModelList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelSetup.Designer.cs">
+      <DependentUpon>ModelSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewName.Designer.cs">
+      <DependentUpon>NewName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutrunner.cs" />
+    <Compile Include="NutrunnerEth.cs" />
+    <Compile Include="NutSocket1.cs" />
+    <Compile Include="Offset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Offset.Designer.cs">
+      <DependentUpon>Offset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OmronWHTester.cs" />
+    <Compile Include="PCANBasic.cs" />
+    <Compile Include="PCanComm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RobotStartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RobotStartView.Designer.cs">
+      <DependentUpon>RobotStartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartView.Designer.cs">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StepMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StepMonitor.Designer.cs">
+      <DependentUpon>StepMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestCls.cs" />
+    <Compile Include="TesterStartView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TesterStartView.Designer.cs">
+      <DependentUpon>TesterStartView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitePass.Designer.cs">
+      <DependentUpon>TitePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TorqueSpec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TorqueSpec.Designer.cs">
+      <DependentUpon>TorqueSpec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TPCRobot.cs" />
+    <Compile Include="_Define.cs" />
+    <EmbeddedResource Include="AdminPass.resx">
+      <DependentUpon>AdminPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BCDManualPrint.resx">
+      <DependentUpon>BCDManualPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigSetup.resx">
+      <DependentUpon>ConfigSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HipotDSSWAlarm.resx">
+      <DependentUpon>HipotDSSWAlarm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO_Monitor.resx">
+      <DependentUpon>IO_Monitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LotCountForm.resx">
+      <DependentUpon>LotCountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelList.resx">
+      <DependentUpon>ModelList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelSetup.resx">
+      <DependentUpon>ModelSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewName.resx">
+      <DependentUpon>NewName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Offset.resx">
+      <DependentUpon>Offset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RobotStartView.resx">
+      <DependentUpon>RobotStartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartView.resx">
+      <DependentUpon>StartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StepMonitor.resx">
+      <DependentUpon>StepMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TesterStartView.resx">
+      <DependentUpon>TesterStartView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitePass.resx">
+      <DependentUpon>TitePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TorqueSpec.resx">
+      <DependentUpon>TorqueSpec.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupFieldCollection_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GroupHeader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kmixdocked_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noatunplay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1downarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1leftarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1uparrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2rightarrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2rightarrow_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bitmap1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button_cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checksample3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checksample5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filesaveas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kalarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kcontrol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kgpg_identity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kmixdocked_error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korganizer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kwrite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveDown_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MoveUp_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noatunplay1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notes_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_system1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\player_stop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printmgr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rebuild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Zoom100_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZoomIn_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\수정됨_First_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\수정됨_Last_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InsertHeader_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Export_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Next_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Prev_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\led_gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Led_Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Led_Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.Data.v14.2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.Images.v14.2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.Printing.v14.2.Core.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.Sparkline.v14.2.Core.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.Utils.v14.2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\DevExpress.XtraEditors.v14.2.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleNext_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FullStackedArea_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SendBackward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="laptop_battery.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
